@@ -4,9 +4,10 @@ public class ChocolateBar extends Product {
     private int weight;
     private String chocolateType;
 
-    public ChocolateBar(String name, String brand, double price, int weight) {
+    public ChocolateBar(String name, String brand, double price, int weight, String chocolateType) {
         super(name, brand, price);
         this.weight = weight;
+        this.chocolateType = chocolateType;
     }
 
     public int getWeight() {
