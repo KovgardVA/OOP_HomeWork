@@ -19,4 +19,15 @@ public class VendingMachine {
         }
         return null;
     }
+
+    public ChocolateBar getChocolateBar(String chocolateType) {
+        for (Product product : products) {
+            if (product instanceof ChocolateBar) {
+                if (((ChocolateBar)product).getChocolateType() == chocolateType) {
+                    return (ChocolateBar)product;
+                }
+            }
+        }
+        return null;
+    }
 }
