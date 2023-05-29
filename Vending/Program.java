@@ -5,16 +5,6 @@ import java.util.List;
 
 public class Program {
     public static void main(String[] args) {
-        //  |объявление переменной| |инициализация объекта|
-        Product product1 = new Product();
-        //  конструктор по умолчанию (без параметров)
-
-        // product1.brand = "Pepsi co.";
-        // product1.name = "Pepsi cola";
-        // product1.price = 50.99;
-
-        System.out.println(product1.displayInfo());
-
         BottleOfWater bottleOfWater1 = new BottleOfWater("Aqua", "Water co.", 50.99, 0.5);
         BottleOfWater bottleOfWater2 = new BottleOfWater("Aqua Light", "Water co.", 55.99, 2);
         BottleOfWater bottleOfWater3 = new BottleOfWater("Aqua Max", "Water co.", 59.99, 1.5);

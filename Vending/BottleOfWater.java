@@ -1,8 +1,5 @@
 package Vending;
 
-/* Если нет конструктора по-умолчанию, обязательно нужно вызывать
- * конструктор базового типа (из наследуемого класса).
- */
 public class BottleOfWater extends Product {
 
     private double volume;
@@ -24,11 +21,4 @@ public class BottleOfWater extends Product {
     public String displayInfo() {
         return String.format("[Бутылка] %s - %s - %f - [Объем: %f]", brand, name, price, volume);
     }
-    
-    // public Bottle(String name, double price){
-    //     super(name, price); 
-    //     /* Указывает на члены базового типа с учетом модификатора
-    //      * области видимости.
-    //      */
-    // }
 }

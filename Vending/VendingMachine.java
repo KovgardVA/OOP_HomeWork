@@ -3,7 +3,6 @@ package Vending;
 import java.util.List;
 
 public class VendingMachine {
-    // Хранить ссылку на объект класса наследника в переменной супер-типа.
     private List<Product> products;
 
     public VendingMachine(List<Product> products) {
