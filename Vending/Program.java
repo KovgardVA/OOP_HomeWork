@@ -18,6 +18,9 @@ public class Program {
         products.add(bottleOfWater1);
         products.add(bottleOfWater2);
         products.add(bottleOfMilk1);
+        products.add(chocolateBar1);
+        products.add(chocolateBar2);
+        products.add(chocolateBar3);
         
         VendingMachine vendingMachine = new VendingMachine(products);
 
