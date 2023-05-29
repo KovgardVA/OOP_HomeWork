@@ -9,7 +9,7 @@ public class Program {
         BottleOfWater bottleOfWater2 = new BottleOfWater("Aqua Light", "Water co.", 55.99, 2);
         BottleOfWater bottleOfWater3 = new BottleOfWater("Aqua Max", "Water co.", 59.99, 1.5);
         BottleOfWater bottleOfWater4 = new BottleOfWater("Aqua Zero", "Water co.", 70.99, 1);
-        System.out.println(bottleOfWater1.displayInfo()); // Динамическая диспетчеризация.
+        System.out.println(bottleOfWater1.displayInfo());
 
         BottleOfMilk bottleOfMilk1 = new BottleOfMilk("Moo", "Cow co.", 62.99, 1.5, 2);
         System.out.println(bottleOfMilk1.displayInfo());
