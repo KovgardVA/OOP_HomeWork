@@ -20,7 +20,7 @@ public class Product {
     }
 
     public String displayInfo() {
-        return String.format("%s - %s - %f", brand, name, price);
+        return String.format("%s - %s - %.2f", brand, name, price);
     }
 
     public double getPrice() {

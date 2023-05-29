@@ -19,6 +19,6 @@ public class BottleOfWater extends Product {
 
     @Override
     public String displayInfo() {
-        return String.format("[Бутылка] %s - %s - %f - [Объем: %f]", brand, name, price, volume);
+        return String.format("[Бутылка] %s - %s - %.2f - [Объем: %.1f]", brand, name, price, volume);
     }
 }

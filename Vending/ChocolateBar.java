@@ -28,6 +28,6 @@ public class ChocolateBar extends Product {
 
     @Override
     public String displayInfo() {
-        return String.format("[Шоколадный батончик] %s - %s - %f - [%s шоколад - %d г.]", brand, name, price, chocolateType, weight);
+        return String.format("[Шоколадный батончик] %s - %s - %.2f - [%s шоколад - %d г.]", brand, name, price, chocolateType, weight);
     }
 }
