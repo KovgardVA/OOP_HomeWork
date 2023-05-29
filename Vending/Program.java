@@ -21,16 +21,25 @@ public class Program {
         products.add(chocolateBar1);
         products.add(chocolateBar2);
         products.add(chocolateBar3);
-        
+
         VendingMachine vendingMachine = new VendingMachine(products);
 
-        BottleOfWater bottleOfWaterResult = vendingMachine.getBottleOfWater(2);
-        if (bottleOfWaterResult != null) {
+        // BottleOfWater bottleOfWaterResult = vendingMachine.getBottleOfWater(2);
+        // if (bottleOfWaterResult != null) {
+        //     System.out.println("Вы купили: ");
+        //     System.out.println(bottleOfWaterResult.displayInfo());
+        // }
+        // else {
+        //     System.out.println("Такой бутылки нет.");
+        // }
+
+        ChocolateBar chocolateBarResult = vendingMachine.getChocolateBar("Темный");
+        if (chocolateBarResult != null) {
             System.out.println("Вы купили: ");
-            System.out.println(bottleOfWaterResult.displayInfo());
+            System.out.println(chocolateBarResult.displayInfo());
         }
         else {
-            System.out.println("Такой бутылки нет.");
+            System.out.println("Такого шоколадного баточника нет.");
         }
     }
 }
