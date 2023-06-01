@@ -12,6 +12,7 @@ public class CatsFeeding {
         };
 
         Plate plate = new Plate(20);
+        plate.addFood(5);
         plate.info();
 
         for (Cat cat : cats) {
@@ -30,6 +31,6 @@ public class CatsFeeding {
                 System.out.printf("Котик %s съел все %s рыбок.\n", cat.getName(), cat.getAppetite());
             }
         }
-        
+
     }
 }

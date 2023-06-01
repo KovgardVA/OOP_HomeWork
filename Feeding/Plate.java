@@ -24,4 +24,8 @@ public class Plate {
         if (food < appetite) return true;
         return false;
     }
+
+    public void addFood(int newFood) {
+        this.food += newFood;
+    }
 }
