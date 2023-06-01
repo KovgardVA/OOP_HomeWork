@@ -20,8 +20,8 @@ public class Plate {
         System.out.printf("В тарелке %d рыбок.\n", food);
     }
 
-    public boolean isEmpty(int food, int appetite) {
-        if (food < appetite) return true;
+    public boolean isEmpty(int eaten) {
+        if (this.food < eaten) return true;
         return false;
     }
 

@@ -16,7 +16,7 @@ public class CatsFeeding {
         plate.info();
 
         for (Cat cat : cats) {
-            if (plate.isEmpty(plate.getFood(), cat.getAppetite())) {
+            if (plate.isEmpty(cat.getAppetite())) {
                 continue;
             } else {
                 cat.eat();
