@@ -17,7 +17,11 @@ public class Plate {
     }
 
     public void info() {
-        System.out.printf("В тарелке %d рыбок.", food);
+        System.out.printf("В тарелке %d рыбок.\n", food);
     }
 
+    public boolean isEmpty(int food, int appetite) {
+        if (food < appetite) return true;
+        return false;
+    }
 }
