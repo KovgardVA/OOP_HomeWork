@@ -17,7 +17,7 @@ public class Plate {
     }
 
     public void info() {
-        System.out.printf("В тарелке %d рыбок.");
+        System.out.printf("В тарелке %d рыбок.", food);
     }
 
 }
