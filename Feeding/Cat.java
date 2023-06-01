@@ -4,12 +4,22 @@ public class Cat {
 
     private String name;
     private int appetite;
-
+    private boolean hunger;
+    
     public Cat(String name, int appetite) {
         this.name = name;
         this.appetite = appetite;
+        this.hunger = true;
     }
-    
+
+    public boolean isHungry() {
+        return hunger;
+    }
+
+    public void setHunger(boolean hunger) {
+        this.hunger = hunger;
+    }
+
     public String getName() {
         return name;
     }
@@ -27,6 +37,6 @@ public class Cat {
     }
 
     public void eat() {
-        
+        if (this.hunger) this.hunger = false;
     }
 }
