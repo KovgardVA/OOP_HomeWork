@@ -1,4 +1,4 @@
-package Se003.Ex001;
+package Staff;
 
 public abstract class Employee implements Comparable<Employee> {
     protected String name;

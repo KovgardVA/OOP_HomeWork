@@ -1,4 +1,4 @@
-package Se003.Ex001;
+package Staff;
 
 public class Worker extends Employee {
     private double kpi;

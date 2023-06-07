@@ -1,4 +1,4 @@
-package Se003.Ex001;
+package Staff;
 
 public class Freelancer extends Employee {
     private int hours;

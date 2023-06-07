@@ -1,4 +1,4 @@
-package Se003.Ex001;
+package Staff;
 
 import java.util.Arrays;
 import java.util.Random;

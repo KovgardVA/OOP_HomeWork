@@ -1,4 +1,4 @@
-package Se003.Ex001;
+package Staff;
 
 public class Director extends Employee{
 
