@@ -7,6 +7,10 @@ public class Director extends Employee{
         super(name, surname, age, salary);
         this.bonus = bonus;
     }
+    
+    public int getBonus() {
+        return bonus;
+    }
 
     @Override
     public double calculateSalary() {
