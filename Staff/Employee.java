@@ -4,10 +4,12 @@ public abstract class Employee implements Comparable<Employee> {
     protected String name;
     protected String surname;
     protected double salary;
+    protected int age;
 
-    public Employee(String name, String surname, double salary) {
+    public Employee(String name, String surname, int age, double salary) {
         this.name = name;
         this.surname = surname;
+        this.age = age;
         this.salary = salary;
     }
 
@@ -41,7 +43,7 @@ public abstract class Employee implements Comparable<Employee> {
     
     @Override
     public String toString() {
-        return String.format("%s %s; Заработная плата: %.2f руб.",
-                surname, name, calculateSalary());
+        return String.format("%s %s; Возраст: %d; Заработная плата: %.2f руб.",
+                surname, name, age, calculateSalary());
     }
 }

@@ -10,27 +10,33 @@ public class Program {
         String[] names = new String[] { "An", "Ba", "Ca", "Da", "Ea" };
         String[] surnames = new String[] { "Fa", "Ga", "Ha", "Ia", "Ja" };
 
+        int age = random.nextInt(18, 45);
         double salary = random.nextInt(20000, 80000);
+
         double kpi = random.nextDouble(0.5, 1.5);
-        double freelance = random.nextInt(200,1000);
+
+        double freelance = random.nextInt(200, 1000);
         int hours = random.nextInt(100, 200);
+
         int bonus = random.nextInt(20000, 80000);
-        
+
         int value = random.nextInt(3);
         switch (value) {
             case 0:
                 return new Worker(
-                    names[random.nextInt(names.length)],
-                    surnames[random.nextInt(surnames.length)],
-                    salary, kpi);
+                        names[random.nextInt(names.length)],
+                        surnames[random.nextInt(surnames.length)],
+                        age, salary, kpi);
             case 1:
-                return new Freelancer(names[random.nextInt(names.length)],
-                surnames[random.nextInt(surnames.length)],
-                freelance, hours);
+                return new Freelancer(
+                        names[random.nextInt(names.length)],
+                        surnames[random.nextInt(surnames.length)],
+                        age, freelance, hours);
             case 2:
-                return new Director(names[random.nextInt(names.length)],
-                surnames[random.nextInt(surnames.length)],
-                salary, bonus);
+                return new Director(
+                        names[random.nextInt(names.length)],
+                        surnames[random.nextInt(surnames.length)],
+                        age, salary, bonus);
             default:
                 return null;
         }
@@ -45,7 +51,7 @@ public class Program {
             employees[i] = generateEmployee();
         }
 
-        Arrays.sort(employees);
+        Arrays.sort(employees, new AgeComparator());
 
         for (Employee employee : employees) {
             System.out.println(employee);

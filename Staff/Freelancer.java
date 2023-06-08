@@ -3,11 +3,11 @@ package Staff;
 public class Freelancer extends Employee {
     private int hours;
 
-    public Freelancer(String name, String surname, double salary, int hours) {
-        super(name, surname, salary);
+    public Freelancer(String name, String surname, int age, double salary, int hours) {
+        super(name, surname, age, salary);
         this.hours = hours;
     }
-    
+
     public int getHours() {
         return hours;
     }

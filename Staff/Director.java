@@ -3,8 +3,8 @@ package Staff;
 public class Director extends Employee{
     private int bonus;
 
-    public Director(String name, String surname, double salary, int bonus) {
-        super(name, surname, salary);
+    public Director(String name, String surname, int age, double salary, int bonus) {
+        super(name, surname, age, salary);
         this.bonus = bonus;
     }
 
