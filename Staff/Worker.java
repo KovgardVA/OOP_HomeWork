@@ -7,6 +7,10 @@ public class Worker extends Employee {
         super(name, surname, age, salary);
         this.kpi = kpi;
     }
+    
+    public double getKpi() {
+        return kpi;
+    }
 
     @Override
     public double calculateSalary() {
