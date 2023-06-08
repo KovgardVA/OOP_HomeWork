@@ -3,15 +3,13 @@ package Fruits;
 import java.util.ArrayList;
 
 public class Box<T extends Fruit> {
-    
+
     private String name;
     private ArrayList<T> fruits;
-    private float weight;
 
     public Box(String name) {
         this.name = name;
         fruits = new ArrayList<T>();
-        weight = 0.0f;
     }
 
     public String getName() {
@@ -22,12 +20,19 @@ public class Box<T extends Fruit> {
         fruits.add(fruit);
     }
 
-    public void removeTo(ArrayList<T> newBox) {
-        newBox.addAll(fruits);
-        fruits.clear();
+    public void removeTo(Box<T> newBox) {
+        if (this.getWeight() == 0) {
+            System.out.println("В коробке ничего нет! Мы не можем из нее ничего переложить.");
+        } else {
+            newBox.fruits.addAll(fruits);
+            this.fruits.clear();
+            System.out.printf("Мы переложили %d фруктов из коробки '%s' в коробку '%s'\n",
+                    newBox.fruits.size(), name, newBox.getName());
+        }
     }
 
     public float getWeight() {
+        float weight = 0.0f;
         for (T fruit : fruits) {
             weight += fruit.getWeight();
         }
@@ -36,7 +41,7 @@ public class Box<T extends Fruit> {
 
     @Override
     public String toString() {
-        return "Box [name=" + name + ", fruits=" + fruits.size() + "]";
+        return String.format("В коробке '%s' лежит %d фруктов.", name, fruits.size());
     }
 
     public boolean compare(Box<?> compareBox) {
