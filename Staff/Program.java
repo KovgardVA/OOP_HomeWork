@@ -7,8 +7,10 @@ public class Program {
     static Random random = new Random();
 
     static Employee generateEmployee() {
-        String[] names = new String[] { "An", "Ba", "Ca", "Da", "Ea" };
-        String[] surnames = new String[] { "Fa", "Ga", "Ha", "Ia", "Ja" };
+        String[] names = new String[] { "Andrew", "Ban", "Calvin", "Dave", "Eugene" };
+        String[] surnames = new String[] {
+                "Adamson", "Bates", "Cowell", "Duncan", "Enderson", "Farrell", "Goldman", "Hodges", "Kendal",
+                "Lampkin" };
 
         int age = random.nextInt(18, 45);
         double salary = random.nextInt(20000, 80000);
@@ -51,7 +53,8 @@ public class Program {
             employees[i] = generateEmployee();
         }
 
-        Arrays.sort(employees, new AgeComparator());
+        // Arrays.sort(employees, new AgeComparator());
+        Arrays.sort(employees); // Имя + фамилия
 
         for (Employee employee : employees) {
             System.out.println(employee);

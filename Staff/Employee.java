@@ -30,20 +30,20 @@ public abstract class Employee implements Comparable<Employee> {
      * @return
      */
     public abstract double calculateSalary();
+    
+    @Override
+    public String toString() {
+        return String.format("%s %s; Возраст: %d; Заработная плата: %.2f руб.",
+        name, surname, age, calculateSalary());
+    }
 
     @Override
     public int compareTo(Employee o) {
         int result =  name.compareTo(o.name);
         if (result == 0) {
-            return Double.compare(calculateSalary(), o.calculateSalary());
+            return surname.compareTo(o.surname);
         } else {
             return result;
         }
-    }
-    
-    @Override
-    public String toString() {
-        return String.format("%s %s; Возраст: %d; Заработная плата: %.2f руб.",
-                surname, name, age, calculateSalary());
     }
 }
