@@ -15,7 +15,6 @@ public class Worker extends Employee {
 
     @Override
     public String toString() {
-        return String.format("%s %s; Рабочий; Зарплата (фикс): %.2f (руб.)",
-                surname, name, calculateSalary());
+        return "Рабочий; " + super.toString() + "(в соответствии с показателями эффективности)";
     }
 }

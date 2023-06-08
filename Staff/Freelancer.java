@@ -7,10 +7,18 @@ public class Freelancer extends Employee {
         super(name, surname, salary);
         this.hours = hours;
     }
-
+    
+    public int getHours() {
+        return hours;
+    }
+    
     @Override
     public double calculateSalary() {
         return salary * hours;
     }
-    
+
+    @Override
+    public String toString() {
+        return "Фрилансер; " + super.toString() + "(за отработанные часы)";
+    }
 }

@@ -39,4 +39,9 @@ public abstract class Employee implements Comparable<Employee> {
         }
     }
     
+    @Override
+    public String toString() {
+        return String.format("%s %s; Заработная плата: %.2f руб.",
+                surname, name, calculateSalary());
+    }
 }
