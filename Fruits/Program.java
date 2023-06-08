@@ -9,8 +9,12 @@ public class Program {
 
         Box<Apple> boxApple1 = new Box<>("Дедушкины яблоки");
         boxApple1.add(new Apple());
+        boxApple1.add(new Apple());
+        boxApple1.add(new Apple());
 
         System.out.println(boxOrange1.getWeight());
+        System.out.println(boxApple1.getWeight());
 
+        System.out.println(boxOrange1.compare(boxApple1));
     }
 }

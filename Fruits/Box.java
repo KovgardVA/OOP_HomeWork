@@ -35,4 +35,7 @@ public class Box<T extends Fruit> {
         return "Box [name=" + name + ", fruits=" + fruits.size() + "]";
     }
 
+    public boolean compare(Box<?> compareBox) {
+        return this.getWeight() == compareBox.getWeight();
+    }
 }
