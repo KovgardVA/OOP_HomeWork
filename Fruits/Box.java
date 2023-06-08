@@ -1,17 +1,16 @@
 package Fruits;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Box<T extends Fruit> {
     
     private String name;
-    private List<T> fruits;
+    private ArrayList<T> fruits;
     private float weight;
 
     public Box(String name) {
         this.name = name;
-        fruits = new ArrayList<>();
+        fruits = new ArrayList<T>();
         weight = 0.0f;
     }
 
@@ -21,6 +20,11 @@ public class Box<T extends Fruit> {
 
     public void add(T fruit) {
         fruits.add(fruit);
+    }
+
+    public void removeTo(ArrayList<T> newBox) {
+        newBox.addAll(fruits);
+        fruits.clear();
     }
 
     public float getWeight() {
@@ -37,5 +41,9 @@ public class Box<T extends Fruit> {
 
     public boolean compare(Box<?> compareBox) {
         return this.getWeight() == compareBox.getWeight();
+    }
+
+    public ArrayList<T> getFruits() {
+        return fruits;
     }
 }
