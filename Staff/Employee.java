@@ -25,6 +25,10 @@ public abstract class Employee implements Comparable<Employee> {
         return salary;
     }
     
+    public int getAge() {
+        return age;
+    }
+    
     /**
      * Расчет среднемесячной 
      * @return
