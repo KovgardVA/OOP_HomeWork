@@ -1,13 +1,13 @@
-package Se005.Booking.View;
+package Booking.View;
 
 import java.util.Collection;
 import java.util.Date;
 
-import Se005.Booking.Model.Table;
-import Se005.Booking.Presenter.View;
-import Se005.Booking.Presenter.ViewObserver;
+import Booking.Model.Table;
+import Booking.Presenter.View;
+import Booking.Presenter.ViewObserver;
 
-public class BookingView implements View{
+public class BookingView implements View {
 
     private ViewObserver observer;
 
@@ -22,13 +22,13 @@ public class BookingView implements View{
         }
     }
 
-    public void reserveTable(Date reservationDate,int tableNo, String name) {
+    public void reserveTable(Date reservationDate, int tableNo, String name) {
         observer.onReservationTable(reservationDate, tableNo, name);
     }
 
     @Override
     public void printReservationTableResult(int reservationNo) {
-        System.out.printf("Столик успешно забранирован. Номер вашей брони: %d\n\n", reservationNo);
+        System.out.printf("Столик успешно забранирован. Номер вашей брони: %d\n", reservationNo);
     }
 
     @Override
@@ -38,6 +38,7 @@ public class BookingView implements View{
 
     /**
      * Действие клиента (пользователь нажал кнопку изменения бронирования столика)
+     * 
      * @param oldReservation
      * @param reservationDate
      * @param tableNo
@@ -56,5 +57,5 @@ public class BookingView implements View{
     public void printReservationChangeError(String errorMessage) {
         System.out.printf("Невозможно изменить бронь.\n%s\n", errorMessage);
     }
-    
+
 }

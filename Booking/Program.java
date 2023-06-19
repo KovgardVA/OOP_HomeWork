@@ -1,10 +1,10 @@
-package Se005.Booking;
+package Booking;
 
 import java.util.Date;
 
-import Se005.Booking.Model.TableModel;
-import Se005.Booking.Presenter.BookingPresenter;
-import Se005.Booking.View.BookingView;
+import Booking.Model.TableModel;
+import Booking.Presenter.BookingPresenter;
+import Booking.View.BookingView;
 
 public class Program {
     public static void main(String[] args) {

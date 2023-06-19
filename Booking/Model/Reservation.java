@@ -1,4 +1,4 @@
-package Se005.Booking.Model;
+package Booking.Model;
 
 import java.util.Date;
 

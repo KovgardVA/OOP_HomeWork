@@ -1,9 +1,9 @@
-package Se005.Booking.Presenter;
+package Booking.Presenter;
 
 import java.util.Collection;
 import java.util.Date;
 
-import Se005.Booking.Model.Table;
+import Booking.Model.Table;
 
 public class BookingPresenter implements ViewObserver {
 
@@ -13,7 +13,7 @@ public class BookingPresenter implements ViewObserver {
     public BookingPresenter(Model tableModel, View bookingView) {
         model = tableModel;
         view = bookingView;
-        bookingView.setObserver(this);
+        view.setObserver(this);
     }
 
     private Collection<Table> loadTables() {

@@ -1,9 +1,9 @@
-package Se005.Booking.Presenter;
+package Booking.Presenter;
 
 import java.util.Collection;
 import java.util.Date;
 
-import Se005.Booking.Model.Table;
+import Booking.Model.Table;
 
 public interface Model {
     Collection<Table> loadTables();

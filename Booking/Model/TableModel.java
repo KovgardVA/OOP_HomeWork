@@ -1,11 +1,11 @@
-package Se005.Booking.Model;
+package Booking.Model;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 import java.util.Iterator;
 
-import Se005.Booking.Presenter.Model;
+import Booking.Presenter.Model;
 
 public class TableModel implements Model{
     private Collection<Table> tables;
