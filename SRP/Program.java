@@ -1,4 +1,4 @@
-package Se006.S2;
+package SRP;
 
 public class Program {
     public static void main(String[] args) {
