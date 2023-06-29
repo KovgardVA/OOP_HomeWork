@@ -11,12 +11,14 @@ public class Program {
         Master master1 = new Master("Ivanov");
         Master master2 = new Master("Petrov");
         Student student1 = new Student("Sidorov");
+        Director director1 = new Director("Semenov");
 
         agancy1.registerObserver(student1);
         agancy1.registerObserver(master1);
         agancy1.registerObserver(master2);
+        agancy1.registerObserver(director1);
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 3; i++) {
             geekBrains.needEmployee();
             google.needEmployee();
             yandex.needEmployee();
